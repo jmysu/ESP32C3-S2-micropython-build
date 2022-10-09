@@ -36,7 +36,8 @@ Project build complete. To flash, run this command:<br>
 <br>
 ---
 <br>
-See http://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html for a quick reference,<br>and http://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html for a tutorial.
+See http://docs.micropython.org/en/latest/esp8266/esp32/quickref.html for a quick reference,<br>
+and http://docs.micropython.org/en/latest/esp8266/esp32/tutorial/intro.html for a tutorial.
 <br>
 <br>
 
