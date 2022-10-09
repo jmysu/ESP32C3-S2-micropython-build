@@ -4,7 +4,7 @@ building ESP32C3 micropython notes
 
 
 Clone esp-idf repository; For ESP32-C3/S2 need V4.3.1+<br>
-  _git clone -b v4.4 --recursive https://github.com/espressif/esp-idf.git_ <br>
+>_git clone -b v4.4 --recursive https://github.com/espressif/esp-idf.git_ <br>
 <br>
 
 After you've cloned and checked out the IDF to the correct version, run the install.sh script:<br>
