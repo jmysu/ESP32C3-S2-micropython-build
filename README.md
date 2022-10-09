@@ -34,7 +34,7 @@ Project build complete. To flash, run this command:<br>
 > _esptool.py --chip esp32c3 --port /dev/cu.wchusbserialfd130 --baud 460800 write_flash -z 0x0 firmware.bin_<br>
 > 
 <img src="pic/ESP32micropython.png"/><br>
-Thonny connectted to micropython w/ PyDOS.<br>
+  Thonny connectted to micropython w/ PyDOS.<br>
 <br>
 ---
 <br>
