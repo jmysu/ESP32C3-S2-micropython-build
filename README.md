@@ -36,6 +36,9 @@ Project build complete. To flash, run this command:<br>
 <img src="pic/ESP32micropython.png"/><br>Thonny connectted to micropython w/ PyDOS.
 <br>
   
+<img src="pic/micropythonHwInfo.png"/><br>micropython display hwInfo.
+<br>
+
 <br>
 ---
 <br>
