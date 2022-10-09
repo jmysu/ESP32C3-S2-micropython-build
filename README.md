@@ -1,4 +1,4 @@
-## ESP32C3-micropython-build
+# ESP32C3-micropython-build
 building ESP32C3 micropython notes
 <br><br>
 
@@ -40,7 +40,9 @@ Project build complete. To flash, run this command:<br>
 See http://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html for a quick reference, and http://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html for a tutorial.
 <br>
 <br>
+
 ## Reference <br>
+
 [General information about the ESP32 port] https://docs.micropython.org/en/latest/esp32/general.html<br>
 [How to build MicroPython for esp32-C3] https://www.jarutex.com/index.php/2022/01/04/9217/<br>
 [Awesome resources collections] https://github.com/mcauser/awesome-micropython<br>
