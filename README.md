@@ -4,27 +4,27 @@ building ESP32C3 micropython notes
 
 
 Clone esp-idf repository; For ESP32-C3/S2 need V4.3.1+<br>
->_git clone -b v4.4 --recursive https://github.com/espressif/esp-idf.git_ <br>
+> _git clone -b v4.4 --recursive https://github.com/espressif/esp-idf.git_ <br>
 <br>
 
 After you've cloned and checked out the IDF to the correct version, run the install.sh script:<br>
-  _cd esp-idf_ <br>
-  _./install.sh_       # (or install.bat on Windows)<br>
-  _source export.sh_   # (or export.bat on Windows)<br>
+> _cd esp-idf_ <br>
+> _./install.sh_       # (or install.bat on Windows)<br>
+> _source export.sh_   # (or export.bat on Windows)<br>
 The install.sh step only needs to be done once. <br>
 You will need to source export.sh for every new session. (For environment variables)<br>
 (Or $export ESP_IDF=~/esp_idf $source export.sh)<br>
 <br>
 
 Clone MicroPython repository...<br>
-  _git clone https://www.github.com/micropython/micropython_ <br>
-  _cd micropython/_ <br>
-  _make -C mpy-cross/_ <br>
+  > _git clone https://www.github.com/micropython/micropython_ <br>
+  > _cd micropython/_ <br>
+  > _make -C mpy-cross/_ <br>
 
-  _cd ports/esp32_<br>
-  _make submodules_<br>
-  _make BOARD=GENERIC_C3 -j4_<br>
-  _cd build-GENERIC_C3_<br>
+  > _cd ports/esp32_<br>
+  > _make submodules_<br>
+  > _make BOARD=GENERIC_C3 -j4_<br>
+  > _cd build-GENERIC_C3_<br>
   <br><br>
 This will produce a combined firmware.bin image in the build-GENERIC/ subdirectory<br>
 (this firmware image is made up of: bootloader.bin, partitions.bin and micropython.bin).<br>
