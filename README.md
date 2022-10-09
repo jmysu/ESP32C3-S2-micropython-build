@@ -1,4 +1,4 @@
-# ESP32C3-micropython-build
+## ESP32C3-micropython-build
 building ESP32C3 micropython notes
 <br><br>
 
@@ -17,21 +17,20 @@ You will need to source export.sh for every new session. (For environment variab
 <br>
 
 Clone MicroPython repository...<br>
-  > _git clone https://www.github.com/micropython/micropython_ <br>
-  > _cd micropython/_ <br>
-  > _make -C mpy-cross/_ <br>
-
-  > _cd ports/esp32_<br>
-  > _make submodules_<br>
-  > _make BOARD=GENERIC_C3 -j4_<br>
-  > _cd build-GENERIC_C3_<br>
-  <br><br>
+> _git clone https://www.github.com/micropython/micropython_ <br>
+> _cd micropython/_ <br>
+> _make -C mpy-cross/_ <br>
+> _cd ports/esp32_<br>
+> _make submodules_<br>
+> _make BOARD=GENERIC_C3 -j4_<br>
+> _cd build-GENERIC_C3_<br>
+<br><br>
 This will produce a combined firmware.bin image in the build-GENERIC/ subdirectory<br>
 (this firmware image is made up of: bootloader.bin, partitions.bin and micropython.bin).<br>
 
 
 Project build complete. To flash, run this command:<br>
-  _esptool.py --chip esp32c3 --port /dev/cu.wchusbserialfd130 --baud 460800 write_flash -z 0x0 firmware.bin_<br>
+> _esptool.py --chip esp32c3 --port /dev/cu.wchusbserialfd130 --baud 460800 write_flash -z 0x0 firmware.bin_<br>
 
 ---
 <br>
