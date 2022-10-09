@@ -24,7 +24,7 @@ Clone MicroPython repository...<br>
   $ cd ports/esp32<br>
   $ make submodules<br>
   $ make BOARD=GENERIC_C3 -j4<br>
-  $cd build-GENERIC_C3<br>
+  $ cd build-GENERIC_C3<br>
   <br><br>
   This will produce a combined firmware.bin image in the build-GENERIC/ subdirectory<br>
   (this firmware image is made up of: bootloader.bin, partitions.bin and micropython.bin).<br>
