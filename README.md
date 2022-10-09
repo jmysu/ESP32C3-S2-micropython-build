@@ -27,9 +27,8 @@ Clone MicroPython repository...<br>
 > _cd build-GENERIC_C3_<br>
 
 <br>
-This will produce a combined firmware.bin image in the build-GENERIC/ subdirectory<br>
+This will produce a combined firmware.bin image in the build-GENERIC_C3/ subdirectory<br>
 (this firmware image is made up of: bootloader.bin, partitions.bin and micropython.bin).<br>
-
 
 Project build complete. To flash, run this command:<br>
 > _esptool.py --chip esp32c3 --port /dev/cu.wchusbserialfd130 --baud 460800 write_flash -z 0x0 firmware.bin_<br>
