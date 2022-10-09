@@ -32,7 +32,7 @@ This will produce a combined firmware.bin image in the build-GENERIC_C3/ subdire
 
 Project build complete. To flash, run this command:<br>
 > _esptool.py --chip esp32c3 --port /dev/cu.wchusbserialfd130 --baud 460800 write_flash -z 0x0 firmware.bin_<br>
-<img src="pic/ESP32C3micropython.png"/><br>
+<img src="pic/ESP32micropython.png"/><br>
 <br>
 ---
 <br>
