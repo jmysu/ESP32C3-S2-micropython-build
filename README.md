@@ -4,11 +4,11 @@ building ESP32C3 micropython notes
 
 
 Clone esp-idf repository; For ESP32-C3/S2 need V4.3.1+<br>
-  _git clone -b v4.4 --recursive https://github.com/espressif/esp-idf.git<br>
+  _git clone -b v4.4 --recursive https://github.com/espressif/esp-idf.git_ <br>
 <br>
 
 After you've cloned and checked out the IDF to the correct version, run the install.sh script:<br>
-  _cd esp-idf<br>
+  _cd esp-idf_ <br>
   _./install.sh_       # (or install.bat on Windows)<br>
   _source export.sh_   # (or export.bat on Windows)<br>
 The install.sh step only needs to be done once. <br>
@@ -17,21 +17,21 @@ You will need to source export.sh for every new session. (For environment variab
 <br>
 
 Clone MicroPython repository...<br>
-  _git clone https://www.github.com/micropython/micropython<br>
-  _cd micropython/<br>
-  _make -C mpy-cross/<br>
+  _git clone https://www.github.com/micropython/micropython_ <br>
+  _cd micropython/_ <br>
+  _make -C mpy-cross/_ <br>
 
-  _cd ports/esp32<br>
-  _make submodules<br>
-  _make BOARD=GENERIC_C3 -j4<br>
-  _cd build-GENERIC_C3<br>
+  _cd ports/esp32_<br>
+  _make submodules_<br>
+  _make BOARD=GENERIC_C3 -j4_<br>
+  _cd build-GENERIC_C3_<br>
   <br><br>
 This will produce a combined firmware.bin image in the build-GENERIC/ subdirectory<br>
 (this firmware image is made up of: bootloader.bin, partitions.bin and micropython.bin).<br>
 
 
 Project build complete. To flash, run this command:<br>
-  _esptool.py --chip esp32c3 --port /dev/cu.wchusbserialfd130 --baud 460800 write_flash -z 0x0 firmware.bin<br>
+  _esptool.py --chip esp32c3 --port /dev/cu.wchusbserialfd130 --baud 460800 write_flash -z 0x0 firmware.bin_<br>
 
 ---
 <br>
