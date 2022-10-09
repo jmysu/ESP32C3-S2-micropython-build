@@ -11,6 +11,7 @@ After you've cloned and checked out the IDF to the correct version, run the inst
 > _cd esp-idf_ <br>
 > _./install.sh_       # (or install.bat on Windows)<br>
 > _source export.sh_   # (or export.bat on Windows)<br>
+
 The install.sh step only needs to be done once. <br>
 You will need to source export.sh for every new session. (For environment variables)<br>
 (Or $export ESP_IDF=~/esp_idf $source export.sh)<br>
@@ -24,7 +25,8 @@ Clone MicroPython repository...<br>
 > _make submodules_<br>
 > _make BOARD=GENERIC_C3 -j4_<br>
 > _cd build-GENERIC_C3_<br>
-<br><br>
+
+<br>
 This will produce a combined firmware.bin image in the build-GENERIC/ subdirectory<br>
 (this firmware image is made up of: bootloader.bin, partitions.bin and micropython.bin).<br>
 
@@ -32,6 +34,7 @@ This will produce a combined firmware.bin image in the build-GENERIC/ subdirecto
 Project build complete. To flash, run this command:<br>
 > _esptool.py --chip esp32c3 --port /dev/cu.wchusbserialfd130 --baud 460800 write_flash -z 0x0 firmware.bin_<br>
 
+<br>
 ---
 <br>
 See http://docs.micropython.org/en/latest/esp8266/esp8266/quickref.html for a quick reference, and http://docs.micropython.org/en/latest/esp8266/esp8266/tutorial/intro.html for a tutorial.
