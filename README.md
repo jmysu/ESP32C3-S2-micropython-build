@@ -25,9 +25,9 @@ Clone MicroPython repository...<br>
 > _make submodules_<br>
 > _make BOARD=GENERIC_C3 -j4_<br>
 > _cd build-GENERIC_C3_<br>
-> _or w/ USBCDC_<br>
+> _(or w/ USBCDC_<br>
 > _make BOARD=GENERIC_C3_USB -j4_<br>
-> _cd build-GENERIC_C3_USB_<br>
+> _cd build-GENERIC_C3_USB)_<br>
 
 
 <br>
