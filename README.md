@@ -25,6 +25,9 @@ Clone MicroPython repository...<br>
 > _make submodules_<br>
 > _make BOARD=GENERIC_C3 -j4_<br>
 > _cd build-GENERIC_C3_<br>
+> _or make BOARD=GENERIC_C3_USB -j4_ (select USBCDC)<br>
+> _cd build-GENERIC_C3_USB<br>
+
 
 <br>
 This will produce a combined firmware.bin image in the build-GENERIC_C3/ subdirectory<br>
@@ -40,6 +43,7 @@ Project build complete. To flash, run this command:<br>
 <br>
 
 <br>
+<img src="esp32c3_micropython_esp32c3_usb.png"/><br>w/ esp32c3_usb<br>
 ---
 <br>
 See http://docs.micropython.org/en/latest/esp32/quickref.html for a quick reference,<br>
