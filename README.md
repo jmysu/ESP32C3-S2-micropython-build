@@ -25,7 +25,7 @@ Clone MicroPython repository...<br>
 > _make submodules_<br>
 > _make BOARD=GENERIC_C3 -j4_<br>
 > _cd build-GENERIC_C3_<br>
-> _or w/ USBCDC_
+> _or w/ USBCDC_<br>
 > _make BOARD=GENERIC_C3_USB -j4_<br>
 > _cd build-GENERIC_C3_USB_<br>
 
@@ -44,7 +44,8 @@ Project build complete. To flash, run this command:<br>
 <br>
 
 <br>
-<img src="pic/esp32c3_micropython_esp32c3_usb.png"/> w/ esp32c3_usbcdc<br>
+<img src="pic/esp32c3_micropython_esp32c3_usb.png"/><br>w/ esp32c3_usbcdc
+<br>
 
 ---
 <br>
