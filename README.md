@@ -43,8 +43,7 @@ Project build complete. To flash, run this command:<br>
 <img src="pic/micropythonHwInfo.png"/><br>micropython display hwInfo.
 <br>
 
-<br>
-<img src="pic/esp32c3_micropython_esp32c3_usb.png"/><br>w/ esp32c3_usbcdc
+<img src="pic/esp32c3_micropython_esp32c3_usb.png"/><br>w/ esp32c3_usbcdc.
 <br>
 
 ---
