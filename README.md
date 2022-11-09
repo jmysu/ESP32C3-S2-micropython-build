@@ -46,14 +46,15 @@ Project build complete. To flash, run this command:<br>
 <img src="pic/esp32c3_micropython_esp32c3_usb.png"/><br>w/ esp32c3_usbcdc.
 <br>
 
+<img src="pic/micropythonBlinkLED.png"/><br>Blinking LEDs
+<br>
+
+
 ---
 <br>
 See http://docs.micropython.org/en/latest/esp32/quickref.html for a quick reference,<br>
 and http://docs.micropython.org/en/latest/esp32/tutorial/intro.html for a tutorial.
 <br>
-<br>
-
-<img src="pic/micropythonBlinkLED.png"/><br>Blinking LEDs
 <br>
 
 ## Reference <br>
