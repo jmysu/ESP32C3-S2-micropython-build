@@ -53,6 +53,9 @@ and http://docs.micropython.org/en/latest/esp32/tutorial/intro.html for a tutori
 <br>
 <br>
 
+<img src="pic/micropythonBlinkLED.png"/><br>Blinking LEDs
+<br>
+
 ## Reference <br>
 
 [General information about the ESP32 port] https://docs.micropython.org/en/latest/esp32/general.html<br>
