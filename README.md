@@ -1,5 +1,5 @@
-# ESP32C3-micropython-build
-building ESP32C3 micropython notes
+# ESP32C3/S2-micropython-build
+building ESP32C3/S2 micropython notes
 <br><br>
 
 
@@ -23,8 +23,8 @@ Clone MicroPython repository...<br>
 > _make -C mpy-cross/_ <br>
 > _cd ports/esp32_<br>
 > _make submodules_<br>
-> _make BOARD=GENERIC_C3 -j4_<br>
-> _cd build-GENERIC_C3_<br>
+> _make BOARD=GENERIC_C3/S2 -j4_<br>
+> _cd build-GENERIC_C3/S2_<br>
 > _(or w/ USBCDC_<br>
 > _make BOARD=GENERIC_C3_USB -j4_<br>
 > _cd build-GENERIC_C3_USB)_<br>
@@ -35,8 +35,12 @@ This will produce a combined firmware.bin image in the build-GENERIC_C3/ subdire
 (this firmware image is made up of: bootloader.bin, partitions.bin and micropython.bin).<br>
 
 Project build complete. To flash, run this command:<br>
-> _esptool.py --chip esp32c3 --port /dev/cu.wchusbserialfd130 --baud 460800 write_flash -z 0x0 firmware.bin_<br>
-> 
+> _esptool.py --chip esp32c3 --port /dev/cu.wchusbserialfd130 --baud 460800 write_flash -z 0x0 c3_firmware.bin_<br>
+> <br>
+
+For ESP32-S2
+> _esptool.py --chip esp32s2 --port /dev/cu.wchusbserialfd130 --baud 460800 write_flash -z 0x01000 s2_firmware.bin_<br>
+>
 <img src="pic/ESP32micropython.png"/><br>Thonny connectted to micropython w/ PyDOS.
 <br>
   
