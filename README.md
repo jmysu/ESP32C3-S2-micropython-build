@@ -35,11 +35,11 @@ This will produce a combined firmware.bin image in the build-GENERIC_C3/ subdire
 (this firmware image is made up of: bootloader.bin, partitions.bin and micropython.bin).<br>
 
 Project build complete. To flash, run this command:<br>
-> _esptool.py --chip esp32c3 --port /dev/cu.wchusbserialfd130 --baud 460800 write_flash -z 0x0 c3_firmware.bin_<br>
+> _esptool.py --port /dev/cu.wchusbserialfd130 write_flash -z 0x0 c3_firmware.bin_<br>
 > <br>
 
 For ESP32-S2
-> _esptool.py --chip esp32s2 --port /dev/cu.wchusbserialfd130 --baud 460800 write_flash -z 0x01000 s2_firmware.bin_<br>
+> _esptool.py --port /dev/cu.wchusbserialfd130 write_flash --flash_mode dio -z 0x01000 s2_firmware.bin_<br>
 >
 <img src="pic/ESP32micropython.png"/><br>Thonny connectted to micropython w/ PyDOS.
 <br>
